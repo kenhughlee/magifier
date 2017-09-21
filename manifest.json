@@ -1,5 +1,11 @@
 {
 	"manifest_version": 2,
 	"name": "Magnifier Extension",
-	"version": "0.1"
+	"version": "0.1",
+	"content_scripts": [
+		{
+			"matches":["https://*/*", "http://*/*"],
+			"js":["jquery.min.js","main.js"]
+		}
+	]
 }
